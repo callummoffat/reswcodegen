@@ -101,7 +101,7 @@ namespace ChristianHelle.DeveloperTools.CodeGenerators.Resw.VSPackage.CustomTool
                     visualStudioVersion == VisualStudioVersion.VS2013
                         ? new CodeAssignStatement(new CodeFieldReferenceExpression(null, "resourceLoader"),
                                                   new CodeMethodInvokeExpression(new CodeTypeReferenceExpression("ResourceLoader"),
-                                                                                 "GetForCurrentView",
+                                                                                 "GetForViewIndependentUse",
                                                                                  new CodeSnippetExpression("\"" + className + "\"")))
                         : new CodeAssignStatement(new CodeFieldReferenceExpression(null, "resourceLoader"),
                                                   new CodeObjectCreateExpression(new CodeTypeReference("ResourceLoader"),
